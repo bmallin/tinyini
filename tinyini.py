@@ -26,6 +26,12 @@ THE SOFTWARE.
 
 
 def parse(filepath):
+    """Parses a ini file.
+
+    :param filepath: Path to ini file.
+    :return: A dict representing the ini file contents.
+    """
+
     with open(filepath, 'r', encoding='utf-8') as fp:
         config = {}
         last_section = None
